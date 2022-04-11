@@ -1,0 +1,26 @@
+@homeColor: rgb(46, 219, 75);
+
+
+html, body{
+    background: @homeColor;
+}
+
+.box {
+    // composes: bigBox from './common.less'; /* 引入这个css中的bigBox类样式，再引入当前的box类样式*/
+    
+    width: 200px;
+    height: 200px;
+    border: 4px solid #d44;
+    background: #eeee22;
+    transition: transform 1s;
+    box-shadow: #d44 20px 20px 20px;
+}
+
+:root {
+    --mainColor: green;
+}
+
+a {
+    color: var(--mainColor);
+    background-color:red;
+}

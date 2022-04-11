@@ -1,0 +1,120 @@
+配置选项：
+  --config配置文件的路径
+                          [字符串] [默认值：webpack.config.js或webpackfile.js]
+  --config-name要使用的配置名称[字符串]
+  --env环境传递给配置，当它是一个函数时
+
+基本选项：
+  --context用于解析入口点和统计信息的根目录
+                                        [字符串] [默认值：当前目录]
+  --entry入口点[字符串]
+  --watch，-w观看文件系统的变化[布尔]
+  --debug切换加载器到调试模式[布尔]
+  --devtool启用devtool以获得更好的调试体验（例如：
+               --devtool eval-cheap-module-source-map）[字符串]
+  --debug的-d快捷方式--devtool eval-cheap-module-source-map
+               --output-pathinfo [布尔]
+  -optimize-minimize --define的-p快捷方式
+               process.env.NODE_ENV =“生产”[布尔]
+  --progress打印编译进度百分比[布尔]
+
+模块选项：
+  --module-bind将扩展名绑定到加载器[字符串]
+  --module-bind-post [字符串]
+  --module-bind-pre [字符串]
+
+输出选项：
+  --output-path编译资产的输出路径
+                                        [字符串] [默认值：当前目录]
+  --output-filename包的输出文件名
+                                                    [字符串] [默认值：[name] .js]
+  --output-chunk-filename其他块的输出文件名
+        [字符串] [默认值：带[id]而不是[name]或[id]前缀的文件名]
+  --output-source-map-filename SourceMap的输出文件名[字符串]
+  --output-public-path资产的公共路径[字符串]
+  --output-jsonp-function用于块的jsonp函数的名称
+                                loading [字符串]
+  --output-pathinfo包含对每个请求的注释
+                                依赖（要求，导入等）[布尔]
+  --output-library将入口点的导出公开为库
+                                                                        [字符串]
+  --output-library-target用于公开条目导出的类型
+                                指向图书馆[字符串]
+
+高级选项：
+  --records-input-path记录文件的路径（阅读）[字符串]
+  --records-output-path记录文件的路径（写作）[字符串]
+  --records-path记录文件的路径[字符串]
+  --define定义包中的任何免费var [字符串]
+  --target目标执行环境[字符串]
+  --cache启用内存缓存
+                          [布尔] [默认值：观看时默认启用]
+  --watch-stdin， -  stdin当stdin关闭时退出进程[布尔]
+  --watch-aggregate-timeout在观看时收集更改的超时
+  --watch-poll观看的轮询间隔（也启用
+                             轮询）[字符串]
+  --hot启用热模块替换[布尔]
+  --prefetch预取此请求（例如：--prefetch
+                             ./file.js) [字符串]
+  --provide在所有模块中将这些模块作为免费变量提供
+                             （例如：--provide jQuery = jquery）[字符串]
+  --labeled-modules启用标记模块[布尔]
+  --plugin加载此插件[字符串]
+  --bail在第一次错误时中止编译
+                                                           [布尔] [默认值：null]
+  --profile配置编译并包含信息
+                             stats [布尔] [默认值：null]
+
+解决方案：
+  --resolve-alias设置用于解析的模块别名（示例：
+                          jquery-plugin = jquery.plugin）[字符串]
+  --resolve-extensions应该用于解决的安装扩展
+                          模块（例如：--resolve-extensions .es6，.js）[数组]
+  --resolve-loader-alias设置加载器别名以解析[字符串]
+
+优化选项：
+  --optimize-max-chunks尝试将块数保持在限制以下
+  --optimize-min-chunk-size尝试将块大小保持在限制之上
+  --optimize-minimize最小化javascript并将加载器切换到
+                             最小化[布尔]
+
+统计选项：
+  --color， -  colors在控制台上启用/禁用颜色
+                                               [布尔] [默认值：（supports-color）]
+  --sort-modules-by按模块中的属性对模块列表进行排序
+                                                                        [字符串]
+  --sort-chunks-by按块中的属性对块列表进行排序
+                                                                        [字符串]
+  --sort-assets-by按资产中的属性对资产列表进行排序
+                                                                        [字符串]
+  --hide-modules隐藏有关模块的信息[布尔]
+  --display-exclude排除输出中的模块[字符串]
+  --display-modules显示输出中的排除模块
+                                                                          [布尔]
+  --display-max-modules设置最大可见模块数
+                                  输出[数字]
+  --display-chunks在输出中显示块[布尔]
+  --display-entrypoints在输出中显示入口点[布尔]
+  --display-origin在输出中显示块的起源[布尔]
+  --display-cached Display还在输出中缓存了模块
+                                                                          [布尔]
+  --display-cached-assets显示输出中的缓存资产[布尔]
+  --display-reasons显示有关模块包含的原因
+                                  输出[布尔]
+  --display-depth显示每个入口点的距离
+                                  模块[布尔]
+  --display-used-exports显示有关已使用导出的信息
+                                  模块（Tree Shaking）[布尔]
+  --display-provided-exports显示有关提供的导出的信息
+                                  来自模块[布尔]
+  --display-optimization-bailout显示有关优化原因的信息
+                                  保护模块[布尔]
+  --display-error-details显示有关错误的详细信息[布尔]
+  --display选择显示预设（详细，详细，
+                                  normal，minimal，errors-only，none）[字符串]
+  --verbose显示更多详细信息[布尔]
+
+选项：
+  --help，-h显示帮助信息[布尔]
+  --version，-v显示版本号[布尔]
+  --json，-j将结果打印为JSON。 [布尔]

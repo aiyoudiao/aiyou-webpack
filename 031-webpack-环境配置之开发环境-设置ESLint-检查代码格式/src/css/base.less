@@ -1,0 +1,117 @@
+/* 导入 字体文件 */
+@font-face {
+    font-family: 'wjsfont';
+    src: url('../assets/fonts/MiFie-Web-Font.eot');
+    src: url('../assets/fonts/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), 
+    url('../assets/fonts/MiFie-Web-Font.woff') format('woff'), 
+    url('../assets/fonts/MiFie-Web-Font.ttf') format('truetype'), 
+    url('../assets/fonts/MiFie-Web-Font.svg#glyphicons_halflingsregular') format('svg');
+  }
+  /* 定义 使用的class */
+  .wjsfont {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'wjsfont';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+  }
+  
+  .wjsfont-logo::before{
+    content: '\e920';
+  }
+  .wjsfont-name::before{
+    content: '\e921';
+  }
+  
+  .wjsfont-e903::before{
+    content: '\e903';
+  }
+  .wjsfont-e901::before{
+    content: '\e901';
+  }
+  .wjsfont-e904::before{
+    content: '\e904';
+  }
+  .wjsfont-e905::before{
+    content: '\e905';
+  }
+  .wjsfont-e902::before{
+    content: '\e902';
+  }
+  
+  /* 添加 产品列表的 文字样式 */
+  .wjsfont-e915::before{
+    content:'\e915';
+  }
+  
+  .wjsfont-new01::before{
+      content: "\e90e";
+  }
+  .wjsfont-new02::before{
+      content: "\e90f";
+  }
+  .wjsfont-new03::before{
+      content: "\e910";
+  }
+  .wjsfont-new04::before{
+      content: "\e911";
+  }
+  
+  /* 网页 最下方的 合作单位 */
+  .wjsfont-partner01::before{
+      content:"\e946";
+  }
+  .wjsfont-partner02::before{
+      content: "\e92f";
+  }
+  .wjsfont-partner03::before{
+      content: "\e92e";
+  }
+  .wjsfont-partner04::before{
+      content: "\e92a";
+  }
+  .wjsfont-partner05::before{
+      content: "\e929";
+  }
+  .wjsfont-partner06::before{
+      content: "\e931";
+  }
+  .wjsfont-partner07::before{
+      content: "\e92c";
+  }
+  .wjsfont-partner08::before{
+      content: "\e92b";
+  }
+  .wjsfont-partner09::before{
+      content: "\e92d";
+  }
+
+
+@homeColor: rgb(46, 219, 75);
+
+
+html, body{
+    background: @homeColor;
+}
+
+.box {
+    // composes: bigBox from './common.less'; /* 引入这个css中的bigBox类样式，再引入当前的box类样式*/
+    
+    width: 200px;
+    height: 200px;
+    border: 4px solid #d44;
+    background: #eeee22;
+    transition: transform 1s;
+    box-shadow: #d44 20px 20px 20px;
+}
+
+:root {
+    --mainColor: green;
+}
+
+a {
+    color: var(--mainColor);
+    background-color:red;
+}
